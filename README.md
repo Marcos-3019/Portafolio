@@ -1,39 +1,47 @@
-# Portfolio profesional de Marcos
+# Taskflow — Lista de tareas
 
-Portfolio estático en español, con estética oscura y diseño responsive. Está hecho con HTML, CSS y un poco de JavaScript para el menú móvil y el año del pie de página.
+Aplicación de lista de tareas creada con HTML, CSS y JavaScript puro como proyecto de portfolio de Marcos.
 
-## Archivos
+## Funcionalidades
 
-- `index.html`: contenido y estructura de la página.
-- `style.css`: estilos, diseño adaptable y tema visual.
-- `script.js`: menú móvil y año automático.
+- Añadir tareas y validar que el texto no esté vacío.
+- Marcar tareas como completadas o pendientes.
+- Eliminar tareas individuales.
+- Filtrar todas, pendientes y completadas.
+- Borrar las tareas completadas.
+- Mostrar estadísticas y barra de progreso.
+- Guardar y recuperar las tareas con `localStorage`.
+- Diseño responsive, accesibilidad básica y soporte para movimiento reducido.
 
-## Cómo verlo en tu ordenador
+## Tecnologías
 
-1. Descarga y descomprime la carpeta.
-2. Abre `index.html` con Chrome, Edge o Firefox.
-3. Para editarlo, abre la carpeta en Visual Studio Code.
+- HTML5 semántico
+- CSS3 (Grid, Flexbox, media queries y variables CSS)
+- JavaScript (DOM, eventos, arrays, objetos, funciones y Web Storage)
 
-No requiere instalación ni herramientas de compilación. La tipografía personalizada usa Google Fonts; si no hay conexión, se mostrarán fuentes del sistema.
+## Ejecutar localmente
 
-## Antes de publicarlo
+Abre `index.html` en un navegador moderno. No necesita instalación ni dependencias de compilación. Para probar el guardado, es recomendable abrir la web desde un servidor o GitHub Pages; el comportamiento de `localStorage` al abrir archivos `file://` puede variar entre navegadores.
 
-- Añade tu correo real en la sección de contacto.
-- Revisa que el enlace a `https://github.com/Marcos-3019` sea el correcto.
-- Actualiza las descripciones de habilidades según lo que puedas demostrar.
-- No presentes el proyecto “Lista de tareas” como terminado: está marcado como idea pendiente.
-- Añade enlaces a demos y repositorios solo cuando existan.
+## Publicar dentro del repositorio del portfolio
 
-## Subirlo a GitHub
+Para mantener la web personal en la raíz del repositorio `Marcos-3019/Portafolio`, crea una carpeta `lista-tareas` dentro de ese repositorio y sube ahí los tres archivos:
 
-1. Entra en GitHub con tu cuenta `Marcos-3019` y crea un repositorio público llamado `portfolio`.
-2. En la página del repositorio, elige **Add file → Upload files**.
-3. Sube `index.html`, `style.css`, `script.js` y `README.md` (puedes subirlos desde la carpeta descomprimida).
-4. Pulsa **Commit changes**.
-5. Para publicar la web, ve a **Settings → Pages**, selecciona la rama `main` y la carpeta `/ (root)`, y guarda. Espera a que GitHub Pages publique el sitio.
+- `lista-tareas/index.html`
+- `lista-tareas/style.css`
+- `lista-tareas/script.js`
 
-Si GitHub muestra opciones distintas, sigue la interfaz actual del repositorio.
+Una vez que GitHub Pages actualice el sitio, la aplicación estará disponible en:
+
+`https://marcos-3019.github.io/Portafolio/lista-tareas/`
+
+## Ideas para futuras mejoras
+
+- Editar una tarea existente.
+- Añadir fecha límite y prioridad.
+- Añadir pruebas automatizadas.
+- Separar la lógica en módulos cuando avance la formación.
 
 ## Nota
 
-Este proyecto es una base inicial de portfolio, no una garantía de empleo. Personaliza los datos y añade proyectos reales a medida que los termines.
+Las tareas se guardan únicamente en el navegador y dispositivo de quien usa la aplicación. No hay cuenta, sincronización entre dispositivos ni base de datos remota.
